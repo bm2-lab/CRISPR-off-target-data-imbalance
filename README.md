@@ -5,4 +5,4 @@ The scripts in genome-wide_off_target_prediction are used to perform the "RF wit
 
 #computational-techniques_for_data-imbalance
 
-The scripts in computational-techniques_for_data-imbalance are deal with the imbanlanced data of CRISPR off-targets using two different computational techniques.  The code in ensamble.py is an ensemble learning way for the final prediction based on combning 831 trained models of original Elevation model. The code in smote.py is the SMOTE algorithm we use to process the unbanlance data before trainning the Elevation model. The two independace testing data are mentioned in Elevation reffered in "        "
+The scripts in computational-techniques_for_data-imbalance are deal with the imbanlanced data of CRISPR off-targets using two different computational techniques.  The code in ensamble.py is an ensemble learning way for the final prediction based on combning 831 trained models of original Elevation model. The code in smote.py is the SMOTE algorithm we use to process the unbanlance data before trainning the Elevation model. The two independace testing data are mentioned in Elevation reffered in " "
