@@ -2,7 +2,7 @@ Data imbalance in CRISPR off-target prediction
 ==========
 ## Indroduction
 For genome-wide CRISPR off-target cleavage sites(OTS) prediction, an import issue is data imbalance – the number of true off-target cleavage sites recognized by whole-genome off-target 
-detection techniques is much smaller than that of all possible nucleotide mismatch loci, making the training of machine leaning model very challenging.
+detection techniques is much smaller than that of all possible nucleotide mismatch loci, making the training of machine leaning model very challenging.<br>
 In our work,we point out that 
 
 
