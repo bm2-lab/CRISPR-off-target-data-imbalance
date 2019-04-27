@@ -29,6 +29,9 @@ In our work,  efficient computational techniques are used based on Elevation to 
 * using bootstrapping sampling-based ensemble learning techniques can significantly enhance the performance of OTS prdiction machine learning model. 
 * using the Synthetic Minority Over-sampling Technique (SMOTE) makes contribution to imporve the performance of OTS prediciton machine learning model.
 
+### Code used for analysis
+Scripts in the catalog of scripts_for_improve_Elevation are the computational tech
+
 
 
 The scripts in scripts_for_improve_Elevation deal with the imbalanced data of CRISPR off-targets using two different computational techniques. The code in ensemble.py is an ensemble learning strategy for the final prediction based on combining 831 trained models of original Elevation model. The code in smote.py is the SMOTE algorithm applied to process the imbalanced data before training the Elevation model. The two independace testing datasets are mentioned in Elevation reffered in "Listgarten, Jennifer et al. 'Prediction of off-target activities for the end-to-end design of CRISPR guide RNAs' Nature biomedical engineering vol. 2,1 (2018): 38-47. "
