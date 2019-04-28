@@ -1,6 +1,6 @@
 Data imbalance in CRISPR off-target prediction
 ==========
-## Indroduction
+## Introduction
 For genome-wide CRISPR off-target cleavage sites(OTS) prediction, an import issue is data imbalance – the number of true off-target cleavage sites recognized by whole-genome off-target 
 detection techniques is much smaller than that of all possible nucleotide mismatch loci, making the training of machine leaning model very challenging.<br>
 In our work,we indicate that: <br>
@@ -17,7 +17,7 @@ In our work, we do a comprehensive reanalysis based on CRISTA
 * we point out that that sampling an equal size of positive and negative samples during the training of random forest model(denoted as "RF with balanced sampling")
 
 ### Codes used for analysis 
-Scripts in the catalog of scripts_for_improve_CRISTA are used to perform leave-one-sgRNA-out and leave-study-out testing experiments using the complete datasets. The methods of “RF with balanced sampling" and "RF without balanced sampling" are all used to address the data imbalanced issue.
+Scripts in the catalog of scripts_for_improve_CRISTA/detailed are used to perform leave-one-sgRNA-out and leave-study-out testing experiments using the complete datasets. The methods of “RF with balanced sampling" and "RF without balanced sampling" are all used to address the data imbalanced issue.
 
 ### The citation of CRISTA
 Shiran Abadi, W.X.Y., David Amar, Itay Mayrose, A machine learning approach for predicting CRISPR-Cas9 cleavage efficiencies and patterns underlying its mechanism of action. PLoS Comput Biology, 2017. 10(13): p. e1005807
