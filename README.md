@@ -39,7 +39,10 @@ Scripts in the catalog of scripts_for_improve_Elevation are the computational te
 Listgarten, J., et al., Prediction of off-target activities for the end-to-end design of CRISPR guide RNAs. Nature Biomedical Engineering, 2018. 2(1): p. 38.
 
 ## Contacting us
-
+Yuli Gao:<br>
+1810994@tongji.edu.cn
+Qi Liu:<br>
+liuqi@tongji.edu.cn
 
 
 
