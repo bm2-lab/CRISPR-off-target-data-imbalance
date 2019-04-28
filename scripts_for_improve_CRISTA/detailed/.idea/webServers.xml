@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="efbdba2b-b330-41be-8886-f13f6ade528e" name="s3" url="http://10.11.41.109">
+        <fileTransfer host="10.11.41.109" port="10322" rootFolder="/home/michael" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="10322" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
