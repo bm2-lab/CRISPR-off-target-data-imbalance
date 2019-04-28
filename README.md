@@ -18,6 +18,10 @@ In our work, we do a comprehensive reanalysis based on CRISTA
 
 ### Codes used for analysis 
 Scripts in the catalog of scripts_for_improve_CRISTA/detailed are used to perform leave-one-sgRNA-out and leave-study-out testing experiments using the complete datasets. The methods of “RF with balanced sampling" and "RF without balanced sampling" are all used to address the data imbalanced issue.
+#### Implementation
+* python 3.6
+* pandas
+* numpy
 
 ### The citation of CRISTA
 Shiran Abadi, W.X.Y., David Amar, Itay Mayrose, A machine learning approach for predicting CRISPR-Cas9 cleavage efficiencies and patterns underlying its mechanism of action. PLoS Comput Biology, 2017. 10(13): p. e1005807
