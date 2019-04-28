@@ -33,11 +33,13 @@ In our work,  efficient computational techniques are used based on Elevation to 
 Scripts in the catalog of scripts_for_improve_Elevation are the computational techniques based on Elevation.The code in ensemble.py is an ensemble learning strategy for the final prediction based on combining 831 trained models of original Elevation model. The code in smote.py is the SMOTE algorithm applied to process the imbalanced data before training the Elevation model.
 #### Implementation
 * python 2.7
-* The original Elevation model()
-
+* The original Elevation model(https://github.com/Microsoft/Elevation)
 
 ### The citation of Elevation
 Listgarten, J., et al., Prediction of off-target activities for the end-to-end design of CRISPR guide RNAs. Nature Biomedical Engineering, 2018. 2(1): p. 38.
+
+## Contacting us
+
 
 
 
