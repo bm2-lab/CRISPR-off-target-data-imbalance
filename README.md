@@ -33,6 +33,7 @@ In our work,  efficient computational techniques are used based on Elevation to 
 Scripts in the catalog of scripts_for_improve_Elevation are the computational techniques based on Elevation.The code in ensemble.py is an ensemble learning strategy for the final prediction based on combining 831 trained models of original Elevation model. The code in smote.py is the SMOTE algorithm applied to process the imbalanced data before training the Elevation model.
 #### Implementation
 * python 2.7
+* The original Elevation model()
 
 
 ### The citation of Elevation
