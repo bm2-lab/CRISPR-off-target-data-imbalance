@@ -1,20 +1,19 @@
 Data imbalance in CRISPR off-target prediction
 ==========
 ## Introduction
-For genome-wide CRISPR off-target cleavage sites(OTS) prediction, an import issue is data imbalance – the number of true off-target cleavage sites recognized by whole-genome off-target 
-detection techniques is much smaller than that of all possible nucleotide mismatch loci, making the training of machine leaning model very challenging.<br>
+For genome-wide CRISPR off-target cleavage sites(OTS) prediction, an important issue is data imbalance – the number of true off-target cleavage sites recognized by whole-genome off-target detection techniques is much smaller than that of all possible nucleotide mismatch loci, making the training of machine leaning model very challenging.<br>
 In our work,we indicate that: <br>
-* the benchmark of CRISPR off-target prediction should be properly evaluated and not overestimated by considering data imbalance issue
-* data imbalance issue can be addressed to certain extent with the help of carefully designed computational techniques. Incorporating bootstrapping sampling technique or data synthetic technique can help to boost the CRISPR off-target prediction performance.
+* The benchmark of CRISPR off-target prediction should be properly evaluated and not overestimated by considering data imbalance issue
+* Data imbalance issue can be addressed to certain extent with the help of carefully designed computational techniques. Incorporating bootstrapping sampling technique or data synthetic technique can help to boost the CRISPR off-target prediction performance.
  
 ## scripts_for_improve_CRISTA
 ### Comprehensive analysis
 
-CRISTA is a random-forest-based machine learning model that determines the propensity of a genomic site to be cleaved by a given single guide RNA (sgRNA) proposed by Shiran Abadi et al. In their work,they applied a bootstrapping sampling technique to under-sampling the majority class and oversampling the minority in the training datasets resulting in the training dataset with twice the size of the cleaved samples and an equal-sized set of uncleaved sample.Then they using a artificial dataset which contains cleaved sites plus an equal set of randomly-chosen uncleaved sites from the original dataset to evaluate their model.<br>
+CRISTA is a random-forest-based machine learning model that determines the propensity of a genomic site to be cleaved by a given single guide RNA (sgRNA) proposed by Shiran Abadi et al. In their work,they applied bootstrapping sampling technique to under-sampling the majority class and oversampling the minority in the training datasets resulting in the training dataset with twice the size of the cleaved samples and an equal-sized set of uncleaved sample.Then they using a artificial dataset which contains cleaved sites plus an equal set of randomly-chosen uncleaved sites from the original dataset to evaluate their model.<br>
 In our work, we do a comprehensive reanalysis based on CRISTA
-* We evaluate CRISTA using the the whole testing dataset instead of its balanced codition to indicate that only the complete testing dataset can reflect the performance of a model.
+* We evaluate CRISTA using the the whole testing dataset instead of its balanced condition to indicate that only the complete testing dataset can reflect the performance of a model.
 * we point out that the routine training methods without bootstrapping sampling generally perform worse than methods to the contrary(denoted as “RF without balanced sampling”)
-* we point out that that sampling an equal size of positive and negative samples during the training of random forest model(denoted as "RF with balanced sampling")
+* we point out that that sampling an equal size of positive and negative samples during the training of random forest model generally perform better than CRISTA model(denoted as "RF with balanced sampling")
 
 ### Codes used for analysis 
 Scripts in the catalog of scripts_for_improve_CRISTA/detailed are used to perform leave-one-sgRNA-out and leave-study-out testing experiments using the complete datasets. The methods of “RF with balanced sampling" and "RF without balanced sampling" are all used to address the data imbalanced issue.
