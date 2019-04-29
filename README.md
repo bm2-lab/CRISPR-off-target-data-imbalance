@@ -11,7 +11,7 @@ In our study,we further emphasize the data imbalance issue in CRISPR off-target 
 
 CRISTA is a random-forest-based machine learning model that determines the propensity of a genomic site to be cleaved by a given single guide RNA (sgRNA) proposed by Shiran Abadi et al. In their work,they applied bootstrapping sampling technique to under-sampling the majority class and oversampling the minority in the training datasets resulting in the training dataset with twice the size of the cleaved samples and an equal-sized set of uncleaved sample.Then they used a artificial dataset which contains cleaved sites plus an equal set of randomly-chosen uncleaved sites from the original dataset to evaluate their model.<br>
 In our study, we performed a comprehensive re-analysis based on CRISTA
-* We evaluate CRISTA using the the whole testing dataset instead of its balanced condition to indicate that only the complete testing dataset can reflect the real performance of a model.
+* We evaluate CRISTA using the whole testing dataset instead of its balanced condition to indicate that only the complete testing dataset can reflect the real performance of a model.
 * we point out that the routine training methods without bootstrapping sampling generally perform worse than methods to the contrary(denoted as “RF without balanced sampling”)
 * we point out that sampling an equal size of positive and negative samples during the training of random forest model generally perform better than CRISTA model(denoted as "RF with balanced sampling")
 
