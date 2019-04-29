@@ -45,7 +45,7 @@ Listgarten, J., et al., Prediction of off-target activities for the end-to-end d
 Yuli Gao:<br>
 1810994@tongji.edu.cn<br>
 Qi Liu:<br>
-liuqi@tongji.edu.cn
+qiliu@tongji.edu.cn
 
 
 
